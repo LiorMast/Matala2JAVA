@@ -1,2 +1,6 @@
-package assignment_2;public interface Effectable {
+package assignment_2;
+
+public interface Effectable {
+    void setEffectOn();
+    void setEffectOff();
 }
