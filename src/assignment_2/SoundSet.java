@@ -1,12 +1,15 @@
+package assignment_2;
+
 public class SoundSet {
 
     private int duration;
-    int[] pitches;
+    int[] pitches = {};
 
     public SoundSet(int duration, int... pitches) {
         this.duration = duration;
         this.pitches = pitches;
     }
+
 
     public SoundSet(int duration, String... notes){
         this.duration = duration;
@@ -15,4 +18,16 @@ public class SoundSet {
             pitches[i] = assignment_2.PitchHelper.nameToPitch(notes[i]);
         }
     }
+
+    public SoundSet(int duration){
+        this.duration = duration;
+    }
+    public int getDuration() {
+        return duration;
+    }
+
+    public int[] getPitches() {
+        return pitches;
+    }
+
 }

@@ -73,8 +73,7 @@ public class Player {
     }
 
     public void setInstrument(String instrument) {
-        channel.programChange(instr[instrumentToIx.get(
-                instrument)].getPatch().getProgram());
+        channel.programChange(instr[instrumentToIx.get(instrument)].getPatch().getProgram());
     }
 
 }
