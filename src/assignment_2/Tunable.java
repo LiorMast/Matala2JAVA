@@ -26,6 +26,7 @@ public abstract class Tunable extends MusicalInstrument {
         }
         return isPlaying;
     }
+
     public boolean isOutOfTune() {
 
         return tuneCounter >= outTune;

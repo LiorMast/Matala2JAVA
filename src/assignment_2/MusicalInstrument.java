@@ -32,18 +32,20 @@ public abstract class MusicalInstrument {
 
     }
 
+
+
     public void playSong(Song song){
-            song.reset();
-            System.out.println("Playing " + song.getTitle() + " on " + this.toString());
-            boolean isPlaying = true;
-            while (song.hasNext() && isPlaying) {
-                 isPlaying =  play(song.next());
-            }
-            if (!isPlaying){
-                System.out.println("Stopped playing " + song.getTitle() + " due to error!");
-            }else{
+        song.reset();
+        System.out.println("Playing " + song.getTitle() + " on " + this.toString());
+        boolean isPlaying = true;
+        while (song.hasNext() && isPlaying) {
+            isPlaying =  play(song.next());
+        }
+        if (!isPlaying){
+            System.out.println("Stopped playing " + song.getTitle() + " due to error!");
+        }else{
             System.out.println("Done playing "+song.getTitle());
-            }
+        }
 
 
     }
