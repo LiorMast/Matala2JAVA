@@ -7395,7 +7395,7 @@ public static Song wiiSports(){
     }
     public static void main(String[] args) {
         Piano piano = new Piano();
-        piano.playSong(vogelimkafig());
+        piano.playSong(redSwan());
 
 //        Xylophone xylophone = new Xylophone();
 //        xylophone.playSong(superMario());
